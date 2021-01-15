@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat app</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1 class="heading">Welcome to the Chat</h1>
+    <div class="chatBox"></div>
+    <div class="inputBox">
+      <form id="sendMessageForm">
+        <div>
+          <input
+            type="text"
+            placeholder="Enter your message"
+            id="messageInput"
+          />
+        </div>
+        <div>
+          <button type="submit" id="submitBtn">
+            <img src="./send icon.svg" alt="Send" class="sendIcon" />
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <a href="http://www.onlinewebfonts.com">Icon credits: oNline Web Fonts</a>
+    </div>
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="./client.js"></script>
+  </body>
+</html>
